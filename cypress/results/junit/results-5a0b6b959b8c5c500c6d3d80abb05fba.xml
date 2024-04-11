@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.176" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-03-26T11:49:22" tests="0" file="cypress/e2e/tests/modals/dialogModelTest.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Dialog specific test" timestamp="2024-03-26T11:49:22" tests="1" time="2.170" failures="0">
+    <testcase name="Dialog specific test Open dialog with component" time="2.138" classname="Open dialog with component">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.463" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-03-26T11:49:12" tests="0" file="cypress/e2e/tests/forms/formLayoutPageTest.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test for form layout page" timestamp="2024-03-26T11:49:12" tests="4" time="9.455" failures="0">
+    <testcase name="Test for form layout page Test to submit inline form" time="3.069" classname="Test to submit inline form">
+    </testcase>
+    <testcase name="Test for form layout page Test to submit signin form" time="2.230" classname="Test to submit signin form">
+    </testcase>
+    <testcase name="Test for form layout page Test to submit basic form" time="1.837" classname="Test to submit basic form">
+    </testcase>
+    <testcase name="Test for form layout page Test to submit form without labels" time="2.129" classname="Test to submit form without labels">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="9.159" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-03-26T11:48:45" tests="0" file="cypress/e2e/tests/navigatePageTest.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test to navigate to all sub-menus" timestamp="2024-03-26T11:48:45" tests="1" time="9.152" failures="0">
+    <testcase name="Test to navigate to all sub-menus Navigate to main and sub-menus" time="9.107" classname="Navigate to main and sub-menus">
+    </testcase>
+  </testsuite>
+</testsuites>

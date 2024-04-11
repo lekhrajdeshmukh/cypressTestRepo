@@ -1,0 +1,549 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 12,
+    "passes": 12,
+    "pending": 0,
+    "failures": 0,
+    "testsRegistered": 12,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "start": "2024-03-26T11:48:45.384Z",
+    "end": "2024-03-26T11:49:33.006Z",
+    "duration": 47622
+  },
+  "results": [
+    {
+      "uuid": "748acc2b-fc35-4faf-926b-bba94e6c6c6b",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/auth/registerPageTest.js",
+      "file": "cypress/e2e/tests/auth/registerPageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "87a4cef0-7e78-4da3-9892-ed79f3f5dd7a",
+          "title": "Perform test for auth lgoin page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register new user",
+              "fullTitle": "Perform test for auth lgoin page Register new user",
+              "timedOut": null,
+              "duration": 6494,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('user.json').then(data => {\n  const {\n    fullName,\n    emailAddress,\n    password\n  } = data;\n  _registerAuthPage.onRegisterAuthPage.registerNewUser(fullName, emailAddress, password);\n  _registerAuthPage.onRegisterAuthPage.element.homePageHeader().should('be.visible');\n});",
+              "err": {},
+              "uuid": "3e34cc44-217e-4a18-8af1-f4626977871f",
+              "parentUUID": "87a4cef0-7e78-4da3-9892-ed79f3f5dd7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to verify warning message",
+              "fullTitle": "Perform test for auth lgoin page Test to verify warning message",
+              "timedOut": null,
+              "duration": 1758,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('user.json').then(data => {\n  const {\n    fullNameWarning,\n    emailWarning,\n    passwordWarning\n  } = data;\n  _registerAuthPage.onRegisterAuthPage.registerUserWithInvalidInput(\"1\", \"1\", \"1\");\n  _registerAuthPage.onRegisterAuthPage.element.warningMessages().eq(0).should('contain', fullNameWarning);\n  _registerAuthPage.onRegisterAuthPage.element.warningMessages().eq(1).should('contain', emailWarning);\n  _registerAuthPage.onRegisterAuthPage.element.passwordWarningMessage().should('contain', passwordWarning);\n});",
+              "err": {},
+              "uuid": "cc4dc3d9-fd1a-4690-9b69-74f5593ca23b",
+              "parentUUID": "87a4cef0-7e78-4da3-9892-ed79f3f5dd7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3e34cc44-217e-4a18-8af1-f4626977871f",
+            "cc4dc3d9-fd1a-4690-9b69-74f5593ca23b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8252,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "792b5980-4660-43db-abd8-37772e74c872",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/forms/datePickerPageTest.js",
+      "file": "cypress/e2e/tests/forms/datePickerPageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1639b4ee-e827-4ff5-88ab-a9877e8de202",
+          "title": "datepciker page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "select single date from datepicker option",
+              "fullTitle": "datepciker page tests select single date from datepicker option",
+              "timedOut": null,
+              "duration": 2542,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const day = 19;\n_datePickerPage.onDatePickerPage.selectCommonDatePicker(day);\ncy.getSelectedDate('Form Picker').as('value');\ncy.getFormattedDate(day).as('expectedDate');\ncy.get('@value').then(value => {\n  cy.get('@expectedDate').should('contain', value);\n});",
+              "err": {},
+              "uuid": "bd8864ef-c654-4056-85e1-3454a8a83e5d",
+              "parentUUID": "1639b4ee-e827-4ff5-88ab-a9877e8de202",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "select date range from datepicker range",
+              "fullTitle": "datepciker page tests select date range from datepicker range",
+              "timedOut": null,
+              "duration": 1825,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const day1 = 10;\nconst day2 = 20;\n_datePickerPage.onDatePickerPage.seletRangeDatePicker(day1, day2);",
+              "err": {},
+              "uuid": "b2a006f9-ebde-4269-959b-0ebf2d302009",
+              "parentUUID": "1639b4ee-e827-4ff5-88ab-a9877e8de202",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "bd8864ef-c654-4056-85e1-3454a8a83e5d",
+            "b2a006f9-ebde-4269-959b-0ebf2d302009"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4367,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "885de619-6cd0-47c7-959c-aa5a7e827952",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/forms/formLayoutPageTest.js",
+      "file": "cypress/e2e/tests/forms/formLayoutPageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+          "title": "Test for form layout page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test to submit inline form",
+              "fullTitle": "Test for form layout page Test to submit inline form",
+              "timedOut": null,
+              "duration": 3069,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.submitInlineForm('John cena', 'jj@test.com');",
+              "err": {},
+              "uuid": "a1f1f2dd-78a4-4d00-911e-381eebb1ada8",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to submit signin form",
+              "fullTitle": "Test for form layout page Test to submit signin form",
+              "timedOut": null,
+              "duration": 2230,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.signInForm('jj@test.com', '123456');",
+              "err": {},
+              "uuid": "1b4cfd69-b52a-46f3-9cd5-4635f9926f7a",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to submit basic form",
+              "fullTitle": "Test for form layout page Test to submit basic form",
+              "timedOut": null,
+              "duration": 1837,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.basicForm('jj@test.com', '123456');",
+              "err": {},
+              "uuid": "cab137e7-4d11-4b60-bb70-65ecc4ffd605",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to submit form without labels",
+              "fullTitle": "Test for form layout page Test to submit form without labels",
+              "timedOut": null,
+              "duration": 2129,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.formWithoutLabels('jj@test.com', 'jj1@test.com', \"test message\");",
+              "err": {},
+              "uuid": "a96c406e-e8d0-4366-8651-d58f7f7f0967",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1f1f2dd-78a4-4d00-911e-381eebb1ada8",
+            "1b4cfd69-b52a-46f3-9cd5-4635f9926f7a",
+            "cab137e7-4d11-4b60-bb70-65ecc4ffd605",
+            "a96c406e-e8d0-4366-8651-d58f7f7f0967"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9265,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "cfefd484-9025-4fc9-8763-4848bb32d1d6",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/modals/dialogModelTest.js",
+      "file": "cypress/e2e/tests/modals/dialogModelTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "930e58c4-02ca-4904-9826-594f99c81e68",
+          "title": "Dialog specific test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Open dialog with component",
+              "fullTitle": "Dialog specific test Open dialog with component",
+              "timedOut": null,
+              "duration": 2138,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_dialogModalPage.onDialogModalPage.openDialogWithComponent();\n_dialogModalPage.onDialogModalPage.elements.isdialgBoxVisible().should('be.visible');\n_dialogModalPage.onDialogModalPage.dismissDialogBox();",
+              "err": {},
+              "uuid": "489c392b-7c03-4f04-88eb-439cb1b1f749",
+              "parentUUID": "930e58c4-02ca-4904-9826-594f99c81e68",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "489c392b-7c03-4f04-88eb-439cb1b1f749"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2138,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "16ead975-c6eb-4657-bffa-8d8757148771",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/modals/popupOverPageTest.js",
+      "file": "cypress/e2e/tests/modals/popupOverPageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e52f3236-64d3-4297-af2d-a44222ab4122",
+          "title": "popover position tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test to click on left popup button",
+              "fullTitle": "popover position tests Test to click on left popup button",
+              "timedOut": null,
+              "duration": 2231,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_popupOverPage.onPopupOverPage.hoverOnLeftButton();\n_popupOverPage.onPopupOverPage.element.hoverMessage().should('be.visible');",
+              "err": {},
+              "uuid": "4a871bc6-bb21-4cc5-89a5-67722abbb28f",
+              "parentUUID": "e52f3236-64d3-4297-af2d-a44222ab4122",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4a871bc6-bb21-4cc5-89a5-67722abbb28f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2231,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "5afa05cf-4ebb-415b-9880-fa1fab828a20",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/modals/windowModalTest.js",
+      "file": "cypress/e2e/tests/modals/windowModalTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16303e00-07df-40db-9b52-27a3745e602f",
+          "title": "Test for all types of window modals",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open window form",
+              "fullTitle": "Test for all types of window modals open window form",
+              "timedOut": null,
+              "duration": 2880,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_windowModalPage.onWindowModalPage.openWindowForm();\n_windowModalPage.onWindowModalPage.fillWindowFormFields('window form', 'sample text message');\n_windowModalPage.onWindowModalPage.closePopupWindow();",
+              "err": {},
+              "uuid": "019f8903-146e-4348-83f7-565a46a37462",
+              "parentUUID": "16303e00-07df-40db-9b52-27a3745e602f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "019f8903-146e-4348-83f7-565a46a37462"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2880,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9f06507b-f140-44e6-9b51-a1678d26c8db",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/navigatePageTest.js",
+      "file": "cypress/e2e/tests/navigatePageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b724016e-c055-4cb1-9b4f-30d6981be8d2",
+          "title": "Test to navigate to all sub-menus",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigate to main and sub-menus",
+              "fullTitle": "Test to navigate to all sub-menus Navigate to main and sub-menus",
+              "timedOut": null,
+              "duration": 9107,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_navigationpage.navigateTo.formLayoutPage();\n_navigationpage.navigateTo.datePickerPage();\n_navigationpage.navigateTo.dialogModelPage();\n_navigationpage.navigateTo.windowModelPage();\n_navigationpage.navigateTo.popupModelPage();\n_navigationpage.navigateTo.toasterModelPage();\n_navigationpage.navigateTo.tooltipModelPage();\n_navigationpage.navigateTo.calanderPage();\n_navigationpage.navigateTo.smartTablePage();\n_navigationpage.navigateTo.treeGridPage();\n_navigationpage.navigateTo.loginAuthPage();\n_navigationpage.navigateTo.registerAuthPage();\n_navigationpage.navigateTo.requestPasswordPage();\n_navigationpage.navigateTo.resetPasswordPage();",
+              "err": {},
+              "uuid": "8cf03fc2-ffa0-4734-bd2c-c3fd44568c67",
+              "parentUUID": "b724016e-c055-4cb1-9b4f-30d6981be8d2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8cf03fc2-ffa0-4734-bd2c-c3fd44568c67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9107,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

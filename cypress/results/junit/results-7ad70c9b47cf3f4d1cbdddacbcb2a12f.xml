@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="2.918" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-03-26T11:49:30" tests="0" file="cypress/e2e/tests/modals/windowModalTest.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Test for all types of window modals" timestamp="2024-03-26T11:49:30" tests="1" time="2.912" failures="0">
+    <testcase name="Test for all types of window modals open window form" time="2.880" classname="open window form">
+    </testcase>
+  </testsuite>
+</testsuites>

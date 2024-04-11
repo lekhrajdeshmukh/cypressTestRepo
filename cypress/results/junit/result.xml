@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2024-03-26T11:49:12" tests="0" file="cypress/e2e/tests/forms/formLayoutPageTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Test for form layout page" timestamp="2024-03-26T11:49:12" tests="4" time="9.455" failures="0">
+  
+  <testcase name="Test for form layout page Test to submit inline form" time="3.069" classname="Test to submit inline form"></testcase>
+  
+  <testcase name="Test for form layout page Test to submit signin form" time="2.230" classname="Test to submit signin form"></testcase>
+  
+  <testcase name="Test for form layout page Test to submit basic form" time="1.837" classname="Test to submit basic form"></testcase>
+  
+  <testcase name="Test for form layout page Test to submit form without labels" time="2.129" classname="Test to submit form without labels"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-03-26T11:49:22" tests="0" file="cypress/e2e/tests/modals/dialogModelTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Dialog specific test" timestamp="2024-03-26T11:49:22" tests="1" time="2.170" failures="0">
+  
+  <testcase name="Dialog specific test Open dialog with component" time="2.138" classname="Open dialog with component"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-03-26T11:49:30" tests="0" file="cypress/e2e/tests/modals/windowModalTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Test for all types of window modals" timestamp="2024-03-26T11:49:30" tests="1" time="2.912" failures="0">
+  
+  <testcase name="Test for all types of window modals open window form" time="2.880" classname="open window form"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-03-26T11:48:45" tests="0" file="cypress/e2e/tests/navigatePageTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Test to navigate to all sub-menus" timestamp="2024-03-26T11:48:45" tests="1" time="9.152" failures="0">
+  
+  <testcase name="Test to navigate to all sub-menus Navigate to main and sub-menus" time="9.107" classname="Navigate to main and sub-menus"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-03-26T11:48:55" tests="0" file="cypress/e2e/tests/auth/registerPageTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="Perform test for auth lgoin page" timestamp="2024-03-26T11:48:55" tests="2" time="8.316" failures="0">
+  
+  <testcase name="Perform test for auth lgoin page Register new user" time="6.494" classname="Register new user"></testcase>
+  
+  <testcase name="Perform test for auth lgoin page Test to verify warning message" time="1.758" classname="Test to verify warning message"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-03-26T11:49:26" tests="0" file="cypress/e2e/tests/modals/popupOverPageTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="popover position tests" timestamp="2024-03-26T11:49:26" tests="1" time="2.265" failures="0">
+  
+  <testcase name="popover position tests Test to click on left popup button" time="2.231" classname="Test to click on left popup button"></testcase>
+  
+</testsuite>
+
+<testsuite name="Root Suite" timestamp="2024-03-26T11:49:05" tests="0" file="cypress/e2e/tests/forms/datePickerPageTest.js" time="0.000" failures="0"></testsuite>
+<testsuite name="datepciker page tests" timestamp="2024-03-26T11:49:05" tests="2" time="4.475" failures="0">
+  
+  <testcase name="datepciker page tests select single date from datepicker option" time="2.542" classname="select single date from datepicker option"></testcase>
+  
+  <testcase name="datepciker page tests select date range from datepicker range" time="1.825" classname="select date range from datepicker range"></testcase>
+  
+</testsuite>
+
+</testsuites>

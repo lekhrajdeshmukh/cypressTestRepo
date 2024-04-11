@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="8.321" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-03-26T11:48:55" tests="0" file="cypress/e2e/tests/auth/registerPageTest.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Perform test for auth lgoin page" timestamp="2024-03-26T11:48:55" tests="2" time="8.316" failures="0">
+    <testcase name="Perform test for auth lgoin page Register new user" time="6.494" classname="Register new user">
+    </testcase>
+    <testcase name="Perform test for auth lgoin page Test to verify warning message" time="1.758" classname="Test to verify warning message">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-26T11:49:30.088Z",
+    "end": "2024-03-26T11:49:33.006Z",
+    "duration": 2918,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5afa05cf-4ebb-415b-9880-fa1fab828a20",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/modals/windowModalTest.js",
+      "file": "cypress/e2e/tests/modals/windowModalTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "16303e00-07df-40db-9b52-27a3745e602f",
+          "title": "Test for all types of window modals",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open window form",
+              "fullTitle": "Test for all types of window modals open window form",
+              "timedOut": null,
+              "duration": 2880,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_windowModalPage.onWindowModalPage.openWindowForm();\n_windowModalPage.onWindowModalPage.fillWindowFormFields('window form', 'sample text message');\n_windowModalPage.onWindowModalPage.closePopupWindow();",
+              "err": {},
+              "uuid": "019f8903-146e-4348-83f7-565a46a37462",
+              "parentUUID": "16303e00-07df-40db-9b52-27a3745e602f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "019f8903-146e-4348-83f7-565a46a37462"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2880,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

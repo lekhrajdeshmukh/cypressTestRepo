@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="4.483" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-03-26T11:49:05" tests="0" file="cypress/e2e/tests/forms/datePickerPageTest.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="datepciker page tests" timestamp="2024-03-26T11:49:05" tests="2" time="4.475" failures="0">
+    <testcase name="datepciker page tests select single date from datepicker option" time="2.542" classname="select single date from datepicker option">
+    </testcase>
+    <testcase name="datepciker page tests select date range from datepicker range" time="1.825" classname="select date range from datepicker range">
+    </testcase>
+  </testsuite>
+</testsuites>

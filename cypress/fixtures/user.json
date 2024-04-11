@@ -1,0 +1,8 @@
+{
+    "fullName":"John Smith",
+    "emailAddress":"john.smith@smith.com",
+    "password":"Dummy$1234",
+    "fullNameWarning":"Full name should contains from 4 to 50 characters",
+    "emailWarning":"Email should be the real one!",
+    "passwordWarning":"Password should contain from 4 to 50 characters"
+}

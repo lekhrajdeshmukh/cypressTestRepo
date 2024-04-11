@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-26T11:49:12.026Z",
+    "end": "2024-03-26T11:49:21.489Z",
+    "duration": 9463,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "885de619-6cd0-47c7-959c-aa5a7e827952",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/forms/formLayoutPageTest.js",
+      "file": "cypress/e2e/tests/forms/formLayoutPageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+          "title": "Test for form layout page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test to submit inline form",
+              "fullTitle": "Test for form layout page Test to submit inline form",
+              "timedOut": null,
+              "duration": 3069,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.submitInlineForm('John cena', 'jj@test.com');",
+              "err": {},
+              "uuid": "a1f1f2dd-78a4-4d00-911e-381eebb1ada8",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to submit signin form",
+              "fullTitle": "Test for form layout page Test to submit signin form",
+              "timedOut": null,
+              "duration": 2230,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.signInForm('jj@test.com', '123456');",
+              "err": {},
+              "uuid": "1b4cfd69-b52a-46f3-9cd5-4635f9926f7a",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to submit basic form",
+              "fullTitle": "Test for form layout page Test to submit basic form",
+              "timedOut": null,
+              "duration": 1837,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.basicForm('jj@test.com', '123456');",
+              "err": {},
+              "uuid": "cab137e7-4d11-4b60-bb70-65ecc4ffd605",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to submit form without labels",
+              "fullTitle": "Test for form layout page Test to submit form without labels",
+              "timedOut": null,
+              "duration": 2129,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_formLayoutPage.onFormLayoutPage.formWithoutLabels('jj@test.com', 'jj1@test.com', \"test message\");",
+              "err": {},
+              "uuid": "a96c406e-e8d0-4366-8651-d58f7f7f0967",
+              "parentUUID": "7e77bf1d-f789-42ad-9d8b-442a2430a71d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a1f1f2dd-78a4-4d00-911e-381eebb1ada8",
+            "1b4cfd69-b52a-46f3-9cd5-4635f9926f7a",
+            "cab137e7-4d11-4b60-bb70-65ecc4ffd605",
+            "a96c406e-e8d0-4366-8651-d58f7f7f0967"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9265,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

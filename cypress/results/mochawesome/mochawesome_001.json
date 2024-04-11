@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-26T11:48:55.974Z",
+    "end": "2024-03-26T11:49:04.295Z",
+    "duration": 8321,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "748acc2b-fc35-4faf-926b-bba94e6c6c6b",
+      "title": "",
+      "fullFile": "cypress/e2e/tests/auth/registerPageTest.js",
+      "file": "cypress/e2e/tests/auth/registerPageTest.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "87a4cef0-7e78-4da3-9892-ed79f3f5dd7a",
+          "title": "Perform test for auth lgoin page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Register new user",
+              "fullTitle": "Perform test for auth lgoin page Register new user",
+              "timedOut": null,
+              "duration": 6494,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('user.json').then(data => {\n  const {\n    fullName,\n    emailAddress,\n    password\n  } = data;\n  _registerAuthPage.onRegisterAuthPage.registerNewUser(fullName, emailAddress, password);\n  _registerAuthPage.onRegisterAuthPage.element.homePageHeader().should('be.visible');\n});",
+              "err": {},
+              "uuid": "3e34cc44-217e-4a18-8af1-f4626977871f",
+              "parentUUID": "87a4cef0-7e78-4da3-9892-ed79f3f5dd7a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Test to verify warning message",
+              "fullTitle": "Perform test for auth lgoin page Test to verify warning message",
+              "timedOut": null,
+              "duration": 1758,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('user.json').then(data => {\n  const {\n    fullNameWarning,\n    emailWarning,\n    passwordWarning\n  } = data;\n  _registerAuthPage.onRegisterAuthPage.registerUserWithInvalidInput(\"1\", \"1\", \"1\");\n  _registerAuthPage.onRegisterAuthPage.element.warningMessages().eq(0).should('contain', fullNameWarning);\n  _registerAuthPage.onRegisterAuthPage.element.warningMessages().eq(1).should('contain', emailWarning);\n  _registerAuthPage.onRegisterAuthPage.element.passwordWarningMessage().should('contain', passwordWarning);\n});",
+              "err": {},
+              "uuid": "cc4dc3d9-fd1a-4690-9b69-74f5593ca23b",
+              "parentUUID": "87a4cef0-7e78-4da3-9892-ed79f3f5dd7a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3e34cc44-217e-4a18-8af1-f4626977871f",
+            "cc4dc3d9-fd1a-4690-9b69-74f5593ca23b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8252,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
